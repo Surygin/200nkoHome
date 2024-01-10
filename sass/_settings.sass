@@ -1,7 +1,7 @@
 $font__color: #303749
 $font___color-sub: #F34B00
 $footer__color: #666666
-$bg__color: rgba(0, 11, 63, 0.2)
+$bg__color: rgba(0, 11, 63, 0.1)
 $cardBG__color: #EEEFF3
 $white__color: #FFFFFF
 
@@ -11,6 +11,13 @@ body
 h1, h2, h3, h4, h5, h6 
   font-family: 'Oswald', sans-serif
   font-weight: 500
+picture
+  border-radius: 10px
+  img 
+    width: 100%
+img 
+  width: 100%
+  border-radius: 10px
 
 .invisible__object
   outline: none
@@ -21,4 +28,9 @@ h1, h2, h3, h4, h5, h6
   clip: rect(0 0 0 0)
 
 section
-  padding: 94px 0
+  padding: clamp(3.25rem, 2.725rem + 2.63vw, 5.875rem) 0
+
+.font__color
+  color: $font___color-sub
+.font__dark
+  color: $font__color

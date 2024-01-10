@@ -8,6 +8,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+picture {
+  border-radius: 10px;
+}
+picture img {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .invisible__object {
   outline: none;
   position: absolute;
@@ -18,7 +30,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-  padding: 94px 0;
+  padding: clamp(3.25rem, 2.725rem + 2.63vw, 5.875rem) 0;
+}
+
+.font__color {
+  color: #F34B00;
+}
+
+.font__dark {
+  color: #303749;
 }
 
 .header {
@@ -31,8 +51,9 @@ section {
   background-size: cover;
 }
 .hero__title {
-  margin: 230px 0;
-  font-size: 48px;
+  margin: clamp(7.875rem, 6.575rem + 6.5vw, 14.375rem) auto;
+  max-width: 520px;
+  font-size: clamp(1.75rem, 1.5rem + 1.25vw, 3rem);
   color: #FFFFFF;
 }
 .hero__more-btn {
@@ -52,6 +73,35 @@ section {
   margin-right: 11px;
 }
 
+.appeal {
+  background-color: rgba(0, 11, 63, 0.1);
+}
+.appeal picture img {
+  max-width: 519px;
+}
+.appeal__body {
+  padding: clamp(1.5rem, 0.65rem + 4.25vw, 5.75rem) 0;
+}
+.appeal__title {
+  margin-bottom: 34px;
+  font-size: clamp(1.5rem, 1.225rem + 1.38vw, 2.875rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 3.22px;
+}
+.appeal__text {
+  margin-bottom: 20px;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 1.68px;
+}
+.appeal__autor {
+  font-size: 18px;
+}
+
 .footer {
   color: #F34B00;
   font-size: 16px;
@@ -60,12 +110,18 @@ section {
 
 @media (hover: hover) {
   .hero__more-btn:hover {
-    background-color: rgba(0, 11, 63, 0.2);
+    background-color: rgba(0, 11, 63, 0.1);
   }
 }
 @media screen and (max-width: 991px) {
   .hero__more-btn {
-    background-color: rgba(0, 11, 63, 0.2);
+    background-color: rgba(0, 11, 63, 0.1);
+  }
+  .appeal {
+    text-align: center;
+  }
+  .appeal__autor {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -80,9 +136,7 @@ section {
     background-size: cover;
   }
   .hero__title {
-    width: 319px;
     margin: 0 auto;
     margin-bottom: 129px;
-    font-size: 28px;
   }
 }/*# sourceMappingURL=main.css.map */
