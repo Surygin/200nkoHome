@@ -42,6 +42,10 @@ section {
   color: #303749;
 }
 
+.font__light {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 .header {
   color: #666666;
 }
@@ -130,8 +134,12 @@ section {
   margin-right: 12px;
 }
 
+.steps__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .steps__card {
-  width: clamp(20rem, 16.475rem + 17.63vw, 37.625rem);
   margin-bottom: clamp(1.5rem, 0.95rem + 2.75vw, 4.25rem);
   min-height: 678px;
   padding: 40px;
