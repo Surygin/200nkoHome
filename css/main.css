@@ -176,6 +176,27 @@ section {
   letter-spacing: 1.4px;
 }
 
+.conference {
+  background: #ccc url(../img/conference/conference_bg-min.jpg) center no-repeat;
+  background-size: cover;
+}
+.conference__title {
+  margin-bottom: clamp(3rem, 2.75rem + 1.25vw, 4.25rem);
+  text-align: center;
+  font-family: Oswald;
+  font-size: clamp(1.375rem, 1.05rem + 1.63vw, 3rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 141.5%;
+  letter-spacing: 3.36px;
+}
+.conference__date {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 68px;
+  max-width: 320px;
+}
+
 .footer {
   color: #F34B00;
   font-size: 16px;
@@ -204,6 +225,13 @@ section {
 @media screen and (max-width: 767px) {
   section {
     padding: 48px 0;
+  }
+  .conference {
+    background: #ccc url(../img/conference/conference_bg.jpg) center no-repeat;
+    background-size: cover;
+  }
+  .conference__date {
+    margin-bottom: 160px;
   }
 }
 @media screen and (max-width: 575px) {
