@@ -2,6 +2,10 @@ body {
   background-color: rgba(0, 11, 63, 0.1);
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+body a {
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -210,6 +214,9 @@ section {
   margin-bottom: 68px;
   max-width: 320px;
 }
+.conference a {
+  text-decoration: none;
+}
 
 .space {
   background-color: #fff;
@@ -391,6 +398,12 @@ section {
   }
   .teams__card:hover .teams__img img {
     filter: grayscale(0);
+  }
+  * a {
+    text-decoration: none;
+  }
+  * a:hover {
+    color: #fff;
   }
 }
 @media screen and (min-width: 992px) {
