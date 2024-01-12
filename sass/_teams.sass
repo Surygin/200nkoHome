@@ -1,0 +1,38 @@
+.teams
+    background-color: $white__color
+    &__card
+        margin-bottom: 30px
+        border-bottom: 2px solid $cardBG__color
+        transition: all .3s ease-in-out
+        cursor: pointer
+    &__title 
+        margin-bottom: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem)
+    &__img 
+        display: flex
+        margin-bottom: 20px
+        picture
+            display: block
+            width: 100%
+        img 
+            height: 435px
+            width: 100%
+            border-radius: 10px
+            object-fit: cover 
+            object-position: center
+            filter: grayscale(1)
+            transition: all .3s ease-in-out
+    &__name 
+        margin-bottom: 10px
+        font-size: 16px
+        font-style: normal
+        font-weight: 500
+        line-height: 120%
+        letter-spacing: 1.12px
+    &__description
+        height: 30px
+        margin-bottom: 10px
+        font-size: 12px
+        font-style: normal
+        font-weight: 500
+        line-height: 120%
+        letter-spacing: 0.84px

@@ -246,6 +246,7 @@ section {
   letter-spacing: 1.4px;
 }
 .space__card-reverse {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,6 +261,53 @@ section {
   font-size: 24px;
 }
 
+.teams {
+  background-color: #FFFFFF;
+}
+.teams__card {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #EEEFF3;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.teams__title {
+  margin-bottom: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
+}
+.teams__img {
+  display: flex;
+  margin-bottom: 20px;
+}
+.teams__img picture {
+  display: block;
+  width: 100%;
+}
+.teams__img img {
+  height: 435px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+}
+.teams__name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1.12px;
+}
+.teams__description {
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.84px;
+}
+
 .footer {
   color: #F34B00;
   font-size: 16px;
@@ -269,6 +317,12 @@ section {
 @media (hover: hover) {
   .hero__more-btn:hover {
     background-color: rgba(0, 11, 63, 0.1);
+  }
+  .teams__card:hover {
+    border-bottom: 2px solid #F34B00;
+  }
+  .teams__card:hover .teams__img img {
+    filter: grayscale(0);
   }
 }
 @media screen and (max-width: 991px) {
@@ -283,6 +337,12 @@ section {
   }
   .steps__title {
     margin-bottom: 24px;
+  }
+  .teams__card {
+    text-align: center;
+  }
+  .teams__card img {
+    filter: grayscale(0);
   }
 }
 @media screen and (max-width: 767px) {
