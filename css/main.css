@@ -232,6 +232,11 @@ section {
   text-align: center;
   padding: 65px 20px 54px;
   background-color: #EEEFF3;
+  transform: scaleX(-1);
+  transition: all 0.3s ease-in-out;
+}
+.space__card-active {
+  transform: scaleX(1) !important;
 }
 .space__card-title {
   margin-bottom: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
@@ -275,6 +280,8 @@ section {
   margin-bottom: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
   border-radius: 20px;
   border: 1px solid #F34B00;
+  transform: scaleX(-1);
+  transition: all 0.3s ease-in-out;
 }
 .space__card-reverse .space__card-title {
   margin: 0;

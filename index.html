@@ -885,5 +885,39 @@
 
 
   <script src="main.js"></script>
+  <script>
+        const cardsObserver = new IntersectionObserver(
+        (entries) => {
+            // console.log(entries);
+            entries.forEach((entry) => {
+                // console.log(entry);
+                if (entry.isIntersecting){
+                    // console.log(entry);
+                    entry.target.classList.add('space__card-active');
+                }
+                else{
+                    entry.target.classList.remove('space__card-active');
+                }
+            });
+        }, 
+        {
+            // заданная область увеличена на 50px,
+            // чтобы загрузка картинки началась до появления во viewport
+            rootMargin: "50px 0px 0px"
+        }
+    );
+
+    const cards = document.getElementsByClassName("space__card");
+    
+    for (const card of cards) {
+        cardsObserver.observe(card);
+    }
+
+    const cardsReverse = document.getElementsByClassName("space__card-reverse");
+    
+    for (const card of cardsReverse) {
+        cardsObserver.observe(card);
+    }
+  </script>
 </body>
 </html>

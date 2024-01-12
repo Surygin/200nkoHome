@@ -10,6 +10,10 @@
         text-align: center
         padding: 65px 20px 54px
         background-color: $cardBG__color
+        transform: scaleX(-1)
+        transition: all .3s ease-in-out
+        &-active 
+            transform: scaleX(1) !important
         &-title 
             margin-bottom: clamp(1.5rem, 1.2rem + 1.5vw, 3rem)
             color: $font___color-sub
@@ -47,6 +51,8 @@
             margin-bottom: clamp(1.5rem, 1.2rem + 1.5vw, 3rem)
             border-radius: 20px
             border: 1px solid $font___color-sub
+            transform: scaleX(-1)
+            transition: all .3s ease-in-out
             .space__card-title
                 margin: 0
                 text-align: center
