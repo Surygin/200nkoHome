@@ -1,3 +1,33 @@
+@media screen and (min-width: 992px)
+    .howDev
+        &__steps
+            height: 600px
+        #howDev__path
+            position: absolute
+            height: 100%
+            width: 90%
+            top: -15%
+            left: 0
+        #howDev__item1
+            position: absolute
+            top: 0
+            left: -10%
+        #howDev__item2
+            position: absolute
+            bottom: 0
+            left: -10%
+        #howDev__item3
+            position: absolute
+            top: 15%
+            right: -40%
+
+@media screen and (max-width: 1199px)
+    .howDev
+        #howDev__item1
+            top: 10%
+        #howDev__item3
+            right: -75%
+            top: 20%
 @media screen and (max-width: 991px)
     .hero
         &__more
@@ -12,6 +42,23 @@
             margin-bottom: 24px
         #steps__path
             display: none
+    .howDev
+        &__title 
+            text-align: center
+        #howDev__path
+            display: none
+        #howDev__item1
+            top: auto
+            left: auto
+            right: auto
+        #howDev__item2
+            top: auto
+            left: auto
+            right: auto
+        #howDev__item3
+            top: auto
+            left: auto
+            right: auto
     .teams
         &__card 
             text-align: center
