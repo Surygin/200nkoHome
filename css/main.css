@@ -459,6 +459,9 @@ section {
   .appeal__autor {
     font-size: 14px;
   }
+  .steps__card {
+    min-height: auto;
+  }
   .steps__title {
     margin-bottom: 24px;
   }
