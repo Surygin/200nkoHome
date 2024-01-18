@@ -61,7 +61,7 @@ section {
 }
 .hero__title {
   margin: clamp(7.875rem, 6.575rem + 6.5vw, 14.375rem) auto;
-  max-width: 520px;
+  max-width: 543px;
   font-size: clamp(1.75rem, 1.5rem + 1.25vw, 3rem);
   color: #FFFFFF;
 }
@@ -133,6 +133,10 @@ section {
   line-height: 120%;
   letter-spacing: 2.24px;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.offer__contacts a:hover {
+  color: #ff7b41;
 }
 .offer__contacts-phone {
   margin-right: 12px;
