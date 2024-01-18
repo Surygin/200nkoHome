@@ -227,7 +227,7 @@ section {
 .space__card {
   margin-bottom: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
   position: relative;
-  height: 245px;
+  height: 260px;
   border-radius: 20px;
   text-align: center;
   padding: 65px 20px 54px;
@@ -263,6 +263,10 @@ section {
 }
 .space__card-title::after {
   right: 20px;
+}
+.space__card-subtitle {
+  margin-bottom: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 .space__card-description {
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
